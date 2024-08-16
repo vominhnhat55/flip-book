@@ -26,10 +26,6 @@ export default function BookPage() {
           <AddBookButton />
         </div>
         <DataTable columns={columns} data={data ? data : []} />
-
-        {data?.map((book) => (
-          <BookCard key={book.id} book={book} />
-        ))}
       </div>
     </>
   );
